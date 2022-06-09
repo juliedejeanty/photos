@@ -1,0 +1,221 @@
+@import url(components/section.css);
+@import url(components/button.css);
+@import url(components/nav.css);
+@import url(components/footer.css);
+
+a{
+    transition: 0.5s;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.banner{
+    background-image: url('https://cdn.myportfolio.com/d9de652a-52ab-4ace-8463-8f87b4cc87e5/f656b81a-14aa-4137-8147-e2bfe5781532_rw_3840.jpg?h=34a11c42aae73ea9b9989016fb1895c7');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-color: #00000066;
+    padding: 3% 10% 3% 10%;
+}
+
+.banner .text .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .text .title h1{
+margin-top: -2%!important;
+}
+
+.banner .text .title p{
+text-transform: uppercase;
+font-weight: 300;
+} 
+
+.banner .text a {
+    text-decoration: none;
+    color: white;
+    margin: 4% 0% 0% 0%;
+}
+
+.banner .text a:hover{
+    color: #CB6622;
+}
+
+
+
+
+section .gauche{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .gauche p{
+    max-width: 60%;
+}
+
+section .droite{
+    width: 50%;
+}
+
+section .droite img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+#galerie h2{
+    margin-bottom: 5%;
+}
+
+section:nth-of-type(2){
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-of-type(2) .galerie{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(3,2fr);
+    grid-gap : 2%;
+    margin-bottom: 10%;
+}
+
+section:nth-of-type(2) .galerie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contact{
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+#contact h2{
+    padding-bottom: 2%;
+}
+
+#contact .trouver{
+    display: flex;
+}
+
+#contact .trouver .trouver-left{
+    width: 60%;
+}
+
+
+#contact .trouver .trouver-right button{
+    max-width: 100%;
+    padding: 3%;
+    margin-top: 10%;
+}
+
+#contact .trouver .trouver-right ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+#contact .trouver .trouver-right ul li{
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#contact .trouver .trouver-right ul li i{
+margin-right: 3%;
+}
+
+
+#contact .trouver .trouver-right ul li a{
+    color: black;
+}
+
+
+iframe{
+    filter: grayscale(1)!important;
+}
+
+@media (max-width:  414px) {
+	#apropos{
+		flex-direction: column;
+	}
+
+	#apropos .gauche{
+		min-width: 90% !important;
+	}
+
+	#apropos .gauche .first p{
+		min-width: 100%!important;
+	}
+
+	#apropos .droite{
+		width: 100%;
+		padding-top: 15%;
+	}
+
+    #galerie{
+        margin-top: 10%;
+    }
+
+	#galerie .galerie{
+		display: block;
+	}
+
+    button{
+		max-width: 100%;
+		padding: 7%;
+	}
+
+    #contact .trouver .trouver-right button{
+        padding: 7%;
+    }
+
+	#contact{
+		padding: 7%;
+        margin-top: 20%;
+	}
+
+	#contact .trouver{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#contact .trouver .trouver-left{
+		width: 100%!important;
+	}
+
+    #contact .trouver .trouver-left iframe{
+		width: 100%!important;
+	}
+
+	#contact .trouver .trouver-right{
+		width: 100%!important;
+        padding-top: 15%;
+	}
+
+}

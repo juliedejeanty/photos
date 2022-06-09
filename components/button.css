@@ -1,0 +1,16 @@
+button{
+    max-width: 30%;
+    border: none;
+    background-color: #CB6622;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #db7f42;
+}
